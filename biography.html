@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="mr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>चरित्र | योगीराज सद्गुरू कल्याण स्वामी महाराज</title>
+    <style>
+      :root {
+        --cream: #fff8ea;
+        --paper: #fdf3d8;
+        --maroon: #7a1717;
+        --deep: #3c0f0f;
+        --gold: #d8a53c;
+        --text: #2b140d;
+        --muted: #6b4b3a;
+      }
+
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: "Noto Sans Devanagari", "Segoe UI", Arial, sans-serif;
+        color: var(--text);
+        background: linear-gradient(135deg, #fff5dc 0%, #f7e7ba 100%);
+        line-height: 1.7;
+      }
+      .page {
+        max-width: 1120px;
+        margin: 0 auto;
+        padding: 160px 14px 42px;
+      }
+      .shell {
+        background: rgba(255, 248, 234, 0.95);
+        border: 2px solid rgba(122, 23, 23, 0.18);
+        border-radius: 24px;
+        box-shadow: 0 18px 45px rgba(74, 24, 24, 0.16);
+        overflow: visible;
+      }
+      .header {
+        background: linear-gradient(135deg, var(--maroon), #501111 70%, #2b0b0b);
+        color: #fff8ea;
+        text-align: center;
+        padding: 10px 18px 12px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 20;
+        border-radius: 0;
+        box-shadow: 0 8px 22px rgba(50, 10, 10, 0.18);
+      }
+      .flag-row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 12px;
+      }
+      .flag-icon { width: 42px; height: auto; }
+      .header .topline {
+        font-size: 0.86rem;
+        letter-spacing: 0.16em;
+        color: #f2d48e;
+        margin-bottom: 6px;
+      }
+      h1 {
+        margin: 0;
+        font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+        line-height: 1.25;
+      }
+      .nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+        padding: 10px 12px;
+        background: var(--paper);
+        position: fixed;
+        top: 88px;
+        left: 0;
+        width: 100%;
+        z-index: 19;
+        border-bottom: 1px solid rgba(122, 23, 23, 0.12);
+      }
+      .nav a {
+        text-decoration: none;
+        color: var(--deep);
+        padding: 8px 12px;
+        border-radius: 999px;
+        background: #fffdf7;
+        border: 1px solid rgba(122, 23, 23, 0.14);
+        font-weight: 600;
+      }
+      .content {
+        padding: 22px;
+      }
+      .intro {
+        background: #fffdf8;
+        border: 1px solid rgba(122, 23, 23, 0.1);
+        border-radius: 18px;
+        padding: 18px;
+        margin-bottom: 16px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .card {
+        background: #fffdf8;
+        border: 1px solid rgba(122, 23, 23, 0.1);
+        border-radius: 18px;
+        padding: 18px;
+      }
+      .card h2 {
+        margin-top: 0;
+        color: var(--maroon);
+      }
+      .section-title {
+        grid-column: 1 / -1;
+      }
+      .quote {
+        margin-top: 12px;
+        padding: 14px;
+        border-left: 4px solid var(--gold);
+        background: linear-gradient(135deg, #f8e4ae, #f5d68c);
+        font-weight: 700;
+        border-radius: 12px;
+      }
+      .story-verse {
+        margin: 14px 0;
+        padding: 14px 16px;
+        text-align: center;
+        background: linear-gradient(135deg, #fff8e9, #f8e2b1);
+        border-radius: 12px;
+        border: 1px solid rgba(122, 23, 23, 0.12);
+        font-weight: 700;
+      }
+      .story-verse strong {
+        color: var(--maroon);
+      }
+      .story-figure {
+        margin: 14px 0 0;
+        padding: 0;
+      }
+      .story-figure img {
+        display: block;
+        width: 100%;
+        max-height: 420px;
+        object-fit: contain;
+        background: #fffdf8;
+        border-radius: 14px;
+        border: 1px solid rgba(122, 23, 23, 0.12);
+        box-shadow: 0 8px 20px rgba(58, 18, 18, 0.08);
+      }
+      @media (max-width: 760px) {
+        .grid { grid-template-columns: 1fr; }
+        .nav {
+          gap: 4px;
+          padding: 6px 8px;
+        }
+        .nav a {
+          width: calc(50% - 4px);
+          text-align: center;
+          padding: 7px 8px;
+          font-size: 0.92rem;
+        }
+        .content { padding: 16px; }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <div class="shell">
+        <div id="site-header"></div>
+        <section class="content">
+          <div class="intro">
+            <h2>चरित्र</h2>
+            <p>नाशिक जवळील भोगुर गावचे कुलकर्णी कृष्णाजीपंत यांचा विवाह झाला आणि त्यांना अपत्यप्राप्ती झाली. परंतु दुर्दैवाने त्यांची पत्नी आणि ते अपत्य लवकरच मृत्यू पावले. या आघातामुळे कृष्णाजीपंत गावातील सर्व निरवाणी सोडून तीर्थाटनासाठी बाहेर पडले.</p>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h2>जन्म आणि बालपण</h2>
+              <p>नाशिक जवळील भोगुर गावचे कुलकर्णी कृष्णाजीपंत यांचा विवाह झाला. परंतु पत्नी व अपत्य यांचे लवकरच निधन झाले. यावरून त्यांनी तीर्थाटनाची दिशा स्वीकारली आणि अनेक तीर्थक्षेत्रांना भेट देत श्री महालक्ष्मीच्या दर्शनासाठी कोल्हापूरला आले.</p>
+              <p>कोल्हापूरमध्ये बरवाजीपंत कुलकर्णी यांची भेट झाली. त्यांच्या बहिणीचा विवाह व्हावयचा होता. पूर्वसंचितानुसार कृष्णाजीपंत आणि बरवाजीपंत यांची भेट झाली. बरवाजीपंतांच्या विनंतीवरून कृष्णाजीपंतांनी त्यांच्या बहिणीशी रखुमाबाईंशी विवाह करण्यास मान्यता दिली. याच युगुलाचे पुढील जीवन, समर्थांच्या कृपेने कल्याणमय झाले.</p>
+            </article>
+
+            <article class="card">
+              <h2>गुरू शिष्यांची भेट</h2>
+              <p>सन १६४५ च्या कालावधीमध्ये समर्थ रामदास स्वामी धर्मस्थापनेसाठी महाराष्ट्रात परत आले. समाजाला धर्ममार्गावर आणण्यासाठी ठिकठिकाणी कीर्तन होत असे. समर्थांच्या ओजस्वी आणि रसाळ कीर्तनांनी प्रभावित होऊन बरवाजीपंतांनी समर्थांजवळ शिष्यत्व ग्रहण करण्याची इच्छा व्यक्त केली.</p>
+              <p>समर्थांनीही त्यांची पारख करून अनुग्रह देण्याचे मान्य केले. ठरलेल्या दिवशी समर्थ बरवाजीपंतांच्या घरी आले आणि अनुग्रह दिला. गुरुदक्षिणा देण्यास सांगितल्यावर समर्थांनी ती नाकारली आणि “द्यायचेच असेल तर रामकार्यासाठी अंबाजी दे” असे सांगितले.</p>
+              <div class="quote">“द्यायचेच असेल तर रामकार्यासाठी अंबाजी दे.”</div>
+            </article>
+
+            <article class="card section-title">
+              <h2>अंबाजीचे कल्याण झाले</h2>
+              <p>महाराष्ट्रात परत आल्यावर समर्थ रामदास स्वामींनी ठिकठिकाणी रामजन्मोत्सव सुरू केले. असाच एक उत्सव सातारच्या जवळील मसूर या गावात झाला. रामनवमीच्या दिवशी रथयात्रा चालू असताना रथ एका झाडाजवळ अडला. रथ पुढे जाण्यासाठी ती फांदी तोडावी लागणार होती; पण ती फांदी खोल विहीरीवर होती. या बिकट प्रसंगी अंबाजी पुढे आले आणि झाडावर चढून फांदी तोडली. फांदीसह अंबाजीही विहीरीत पडले.</p>
+              <p>रस्ता मोकळा झाला आणि रथ पुढे गेला. संध्याकाळी सर्वांना अंबाजीचे स्मरण झाले. सगळ्या शिष्यांनी समर्थांना प्रार्थना केली. समर्थ त्या विहीरीजवळ आले व विचारले, “अंबाजी, कल्याण आहे ना?” आतून उत्तर आले, “स्वामी, आपल्या कृपेने सर्व कल्याण आहे.”</p>
+              <figure class="story-figure">
+                <img src="Images/Gallery/Fandi.JPG" alt="अंबाजीचे कल्याण झाले" />
+              </figure>
+            </article>
+
+            <article class="card section-title">
+              <h2>समर्थांच्या सहवासात</h2>
+              <p>इ.स. १६४८ ते १६७८ पर्यंत कल्याण स्वामी हे रामदास स्वामींबरोबर सावलीप्रमाणे होते. श्री आत्माराम स्वामी म्हणतात:</p>
+              <div class="story-verse">आरंभापासोनी शेवटवरी | सद्गुरूचर्या जे नानापरी |<br />नाना अनुबद्ध उपासना सारी | कल्याण महाराजा ठाऊक ||</div>
+            </article>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h2>समर्थ कल्याणांना टाळ फेकून मारतात</h2>
+              <p>समर्थांनी केलेल्या काव्यातील आवश्यक तो भाग कल्याण स्वामी त्या-त्या वेळी सांगत असत. आणि तो अभंग आठवला नाही यावरून समर्थांनी त्यांना टाळ फेकून मारला. डोक्यातून रक्ताची धार लागली. नंतर समर्थांनी ती जखम स्वहस्ते बांधली. या प्रसंगाने त्यांच्या गुरूभक्तीची तळमळ दिसून आली.</p>
+            </article>
+
+            <article class="card">
+              <h2>कल्याणा छाटी उडाली!</h2>
+              <p>सज्जनगडावर असताना एकदा जोराचा वारा सुटला. समर्थांच्या अंगावरील वस्त्र (छाटी) वाऱ्याने उडले. समर्थ उद्गारले, “कल्याणा छाटी उडाली!” हे ऐकून कल्याण स्वामीने त्या कड्यावरून तात्काळ उडी टाकली आणि समर्थांचे वस्त्र हवेतच झेलले. त्याच वेळी त्यांच्या परोपकाराची आणि गुरूसेवकत्वाची कमालीची निष्ठा दिसली.</p>
+            </article>
+
+            <article class="card">
+              <h2>खांडुकची गोष्ट</h2>
+              <p>एकदा समर्थांना पायाला खांडुक (गळु) झाला. ते खांडुक चोखून मोकळे करणे हे उपचार होते, पण हे काम कोणीच करत नव्हते. ते पाहून कल्याण स्वामींनी समर्थांचा पाय हातात घेतला आणि खांडुकावरील पट्टी सोडून तो तोंड लावला. त्यातून अत्यंत सुमधूर आंबा निघाला. शिष्यांची परीक्षा घेण्यासाठी समर्थ अनेक लीला करून असत; कल्याण स्वामींची गुरूभक्ती पाहून सर्वजण आवाक झाले.</p>
+              <figure class="story-figure">
+                <img src="Images/Gallery/Galu.JPG" alt="खांडुकची गोष्ट" />
+              </figure>
+            </article>
+
+            <article class="card">
+              <h2>ब्रह्मपिसा</h2>
+              <p>एकदा श्री समर्थांनी शिष्यांची परीक्षा घेण्यासाठी ब्रह्मपिस्याचे सोंग घेतले. जटा सोडल्या, कपालावर शेंदूराचा मळवट भरला आणि हातामध्ये तलवार घेऊन रौद्र रूप धारण केले. सज्जनगडावरील शिष्य भयभीत झाले. कल्याण स्वामी गडावर नव्हते. शिष्यांनी त्यांना बोलावले आणि सांगितले की समर्थांना वेड लागले आहे. तेव्हा कल्याण स्वामी क्षणात तेथे आले.</p>
+              <p>कल्याण स्वामींना पहाताच समर्थ म्हणाले, “कल्याणा, जवळ येऊ नकोस. नाहितर तुझी खांडोळी करून टाकीन.” तरीही कल्याण स्वामी शांतपणे समर्थांकडे जाऊ लागले. तेव्हा समर्थ म्हणाले, “गुरू सेवा करताना गुरूच्या हातून आलेला मृत्यू हाच मोक्ष.” यावरून कल्याण स्वामींची गुरूनिष्ठा आणि निःस्वार्थ सेवा स्पष्ट दिसते.</p>
+              <figure class="story-figure">
+                <img src="Images/Gallery/Pisa.JPG" alt="ब्रह्मपिसा" />
+              </figure>
+            </article>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h2>विड्याची पाने</h2>
+              <p>एकदा समर्थ आपल्या शिष्यपरिवारासह रामच्या घळीमध्ये होते. मध्यरात्री समर्थांनी पान खाण्याची इच्छा व्यक्त केली. पण तिथे विड्याची पाने नव्हती. कल्याण स्वामी इतक्या काळोखात त्या घनदाट अरण्यात पाने आणण्यास गेले. बराच वेळ परत न आल्यामुळे समर्थ स्वतः शोधात निघाले. काही अंतरावर कल्याण स्वामी निपचित पडलेले दिसले. त्यांना विषारी सापाने दंश केला होता. त्यानंतर समर्थांनी ते विष उतरवले आणि सर्वजण परत घळीमध्ये आले.</p>
+              <figure class="story-figure">
+                <img src="Images/Gallery/Vida.JPG" alt="विड्याची पाने" />
+              </figure>
+            </article>
+
+            <article class="card">
+              <h2>समर्थांच्या वस्त्रांना नमस्कार</h2>
+              <p>नेहमीप्रमाणे कल्याण स्वामी नदीवर वस्त्र धुण्यासाठी घेऊन गेले. त्यांनी स्वतःचे आणि समर्थांचे वस्त्र वेगळ्या ठिकाणी ठेवले. आधी समर्थांचे वस्त्र धुवून त्यांना नमस्कार केला. हे पाहून इतर लोकांनी विचारले. तेव्हा कल्याण स्वामी म्हणाले, “ही वस्त्रे माझ्या गुरूंची श्री समर्थ रामदास स्वामींची आहेत, म्हणून ती मला पूज्य आहेत.” हे ऐकून लोकही त्यांच्याबरोबर समर्थांच्या दर्शनाला गेले.</p>
+            </article>
+
+            <article class="card">
+              <h2>रत्न काढून ठेवतात</h2>
+              <p>एकदा समर्थांनी कल्याण स्वामींना काही रत्ने परिधान करण्यास दिली असता कल्याण स्वामींचा चेहरा उदास झाला. याचे कारण विचारले असता त्यांनी सांगितले, “एकदा श्रीराममय अलंकार धारण केल्यावर या पाषाणाचा काय उपयोग? उलट या रत्नांमुळे आपल्या सेवेत अंतरच पडेल.” यावरून समर्थ समाधान पावले आणि त्यांनी ती रत्ने काढण्याची परवानगी दिली.</p>
+              <p>एका भक्ताने सोन्याची दोन कडी दिली असता त्यांनी ती कोठीघरात टाकून दिली. हातामध्ये घातली नाहीत. त्यांच्या या विरक्तीमुळेच समर्थ म्हणाले, “यासी गुरुत्व होईल लभ्य | अचूक घडला की परमार्थलाभ…”</p>
+            </article>
+
+            <article class="card">
+              <h2>चोरांना पिटाळले आणि हत्ती नियंत्रणात आणला</h2>
+              <p>एकदा कल्याण स्वामी श्री समर्थांचे पाय चेपित बसले असतांना काही चोर सज्जनगडावर आले. त्यांनी समर्थांची आज्ञा घेऊन सर्व चोरांशी एकट्याने सामना केला आणि सर्व चोरांना पिटाळून लावले.</p>
+              <p>ऐकाकारी यात्रेत श्री समर्थ आणि कल्याण स्वामी गेले होते. तेथे एक हत्ती उधळला. लोक घाबरले. कल्याण स्वामीनी आपल्या शारिरीक क्षमतेचा प्रत्यय दिला आणि उधळलेला हत्ती नियंत्रणात आणला. अनेक लोकांचे जीव वाचले.</p>
+              <figure class="story-figure">
+                <img src="Images/Gallery/Hatti.JPG" alt="हत्ती नियंत्रणात आणला" />
+              </figure>
+            </article>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h2>दाळगप्पू</h2>
+              <p>समर्थांना सज्जनगडावरील तळ्याचे पाणी आरोग्याला योग्य नसे. म्हणून दररोज कल्याण स्वामी सज्जनगड उतरून खाली वाहणार्‍या उरमोडी नदीतून दोन प्रचंड हंडे घेऊन पाणी आणीत असत. यामुळे त्यांचे शारिरीक कष्ट मोठे होते. दिवसभर असे काम केल्यावर त्यांना अर्ध्या शेअर तूप, दोन शेर डाळ आणि एक शेर गूळ देण्यात येत असे. अनेक शिष्य त्यांना “दाळगप्पू” म्हणत असत.</p>
+              <p>काही शिष्य संगीत, दासबोध पारायण, किंवा पांडित्याचा अभिमान धरून बसले होते. कल्याण स्वामी मात्र पाणी वाहणे, लेखन करणे, सेवा करणे आणि गुरूसेवा हीच सच्ची भक्ती समजत. याच विषयावर समर्थ आणि कल्याण स्वामी यांच्यातील संवादामुळे दासगीता निर्माण झाली.</p>
+              <figure class="story-figure">
+                <img src="Images/Gallery/Hande.jpg" alt="दाळगप्पू" />
+              </figure>
+            </article>
+
+            <article class="card">
+              <h2>जगदोध्दाराची आज्ञा</h2>
+              <p>आपला प्रिय शिष्य कल्याण सर्व प्रकारच्या परीक्षांमध्ये तावून सुलाखून निघाला आहे. आता या परिपूर्ण शिष्याने इतरांनाही आपल्यासारखे करावे अशा इच्छेने समर्थांनी कल्याण स्वामींना जगदोध्दार करण्यासाठी परांडा, डोमगाव या भागात जाण्याची आज्ञा केली. त्यामुळे इ.स. १६७८ मध्ये कल्याण स्वामी परांडा, डोमगावाच्या मार्गावर निघाले.</p>
+            </article>
+
+            <article class="card">
+              <h2>डोमगावच्या मार्गावर</h2>
+              <p>डोमगावकडे जाण्यापूर्वी कल्याण स्वामी शिरगावला गेले आणि बंधू दत्तात्रय स्वामी यांची भेट घेतली. पुढे पंढरपूरच्या वाटेवर निबिड अरण्यात हणमंत नावाचा दरोडेखोराने त्यांना आडवले. सर्व लोक भयभीत झाले. तेव्हा कल्याण स्वामी म्हणाले, “आपले गुरु श्री समर्थ असताना आपल्याला भय नाही.” हे म्हणून त्यांनी एक धीरगंभीर कटाक्ष त्याच्यावर टाकला. तो दरोडेखोर त्यांच्यापुढे कोसलाला आणि क्षमा याचना करू लागला.</p>
+            </article>
+
+            <article class="card">
+              <h2>श्रमहरणी तटाकी स्वामी कल्याण राजा</h2>
+              <p>श्रमहरणी, सीना नदीच्या तीरावर, डोमगाव या गावी मठस्थापना करून समर्थांना अपेक्षित असे धर्मस्थापनेचे काम पुढे चालू ठेवण्याचे त्यांनी ठरवले. मराठवाड्यातील धाराशिव, आंध्रप्रदेश, कर्नाटक सीमाभागामध्ये २५० हून अधिक मठांची स्थापना केली. जागोजागी कीर्तनें, दासबोधाचा प्रसार आणि उपासना यांच्यामार्फत सामान्य जनतेला धर्ममार्गावर लावले.</p>
+              <p>बालाघाट परिसरात एका भोंदू संन्यासीने थेट कल्याण स्वामींच्या मांडीवर उभे राहिले. त्यांच्या शिष्यांनी त्याचा समाचार घ्यायला उठले. तेव्हा कल्याण स्वामींनी शांतपणे सांगितले, “माझे शरीर अतिशय बळकट आहे. याच्या अशा उभरण्याचा मला काही त्रास होत नाही.” हे ऐकून तो भोंदू संन्यासीही वरमला आणि कल्याण स्वामींचा एकनिष्ठ शिष्य झाला.</p>
+            </article>
+          </div>
+
+          <div class="grid">
+            <article class="card">
+              <h2>श्री समर्थांचे महानिर्वाण</h2>
+              <p>माघ वद्य नवमी शके १६०३ रोजी समर्थ रामदास स्वामी यांनी सज्जनगड येथे अवतारसमाप्ती केली. आपल्या सद्गुरूंना नश्वर देहाचा त्याग केला. हे कळताच कल्याण स्वामींना दुःख अनावर झाले. समर्थ दर्शनाच्या ओढीने ते सज्जनगडावर आले. श्री समर्थांच्या समाधीला अश्रूंचा अभिषेक केला. आपला प्रिय शिष्योत्तम कल्याण आपल्या दर्शनासाठी आला आहे हे पाहून समर्थांनी कल्याण स्वामींना सगुण रूपात दर्शन दिले.</p>
+              <p>समर्थांनी सांगितले की, “मी देह रूपाने जरी नसलो तरी दासबोध, आत्माराम हे ग्रंथ माझीच रूपे आहेत.” हे ऐकून कल्याण स्वामी गड उतरले. परंतु त्यानंतर कधीही सज्जनगडावर परत गेले नाहीत. सज्जनगडावर सर्वत्र समर्थांच्या वास्तव्याची खुणा आहेत. ते प्रतिवर्षी सज्जनगडच्या पायथ्याशी जात आणि तेथूनच श्री समर्थांना नमस्कार करत.</p>
+            </article>
+
+            <article class="card">
+              <h2>महासमाधी</h2>
+              <p>श्री समर्थांच्या महानिर्वाणानंतर त्यांच्या अस्थी चाफळच्या वृंदावनात ठेवण्यात आल्या. त्यांची पूजा व व्यवस्था करण्यासाठी केशव स्वामी चाफळला राहिले होते. इ.स. १७१४ मध्ये परांड्याच्या मठामध्ये कल्याण स्वामी रामायण सांगत होते. हे रामायण ऐकण्यासाठी अनेक साधुसंत आले होते.</p>
+              <p>केशव स्वामी आपल्या गुरुंच्या दर्शनासाठी डोमगांवला निघाले. परंतु निघताना त्यांनी चाफळाहून श्री समर्थांच्या अस्थी बरोबर घेतल्या. डोमगांव येथून पुढे काशीस जाऊन त्या अस्थी विसर्जित कराव्या असे त्यांनी ठरविले होते. परंतु परांड्यास आघताच योगिराज कल्याण स्वामींनी योगबलाने देह ठेवला. आषाढ शु. १३ शके १६३६ अर्थात इ.स. १७१४. त्याप्रमाणे श्री समर्थांच्या महानिर्वाणानंतर ३३ वर्षांनी कल्याण स्वामींनी देह ठेवला.</p>
+              <p>संपूर्ण शिष्यपरिवार शोकसागरात बुडाला. परांड्याचे शिष्य देशमुख यांनी कल्याण स्वामींचे पार्थिव डोमगांव येथे आणले. तेथेच त्यांच्यावर अंत्यसंस्कार करण्यात आले. त्या वेळी मुद्गल स्वामींनी डोमगाव येथे समाधीशीळाची स्थापना केली. गायीच्या ठिकाणी खोदकाम केल्यावर समाधी सापडली. ही घटना आजही श्रद्धेचा विषय आहे.</p>
+              <figure class="story-figure">
+                <img src="Images/Samadhi.jpg" alt="महासमाधी" />
+              </figure>
+            </article>
+          </div>
+
+          <div class="story-verse"><strong>धन्य धन्य हे गुरूशिष्यपण |<br />धन्य धन्य हे सेवाविधान |<br />धन्य धन्य अभेद लक्षण |<br />धन्य धन्य लीलाअगाध ||</strong></div>
+        </section>
+      </div>
+    </div>
+
+    <script>
+      const mount = document.getElementById('site-header');
+      fetch('header.html')
+        .then((response) => response.text())
+        .then((html) => {
+          mount.innerHTML = html;
+          applyShareLinks();
+        })
+        .catch(() => {
+          mount.innerHTML = '<header class="header"><div style="display:flex; align-items:center; justify-content:space-between; gap:12px;"><div class="flag-row" style="margin-bottom:0; flex:1; justify-content:center;"><img src="Images/flag.gif" alt="ध्वज" class="flag-icon" /><div><div class="topline">।। श्री राम समर्थ ।।</div><h1>योगीराज सद्गुरू कल्याण स्वामी महाराज</h1></div><img src="Images/flag.gif" alt="ध्वज" class="flag-icon" /></div><div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; align-items:center; min-width:160px;"><a href="#" aria-label="Share on Facebook" data-share="facebook" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">f</a><a href="#" aria-label="Share on Instagram" data-share="instagram" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">in</a><a href="#" aria-label="Share on Twitter" data-share="twitter" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">X</a><a href="#" aria-label="Search on YouTube" data-share="youtube" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">▶</a></div></div></header><nav class="nav"><a href="index.html#home">आरंभ</a><a href="personality.html">व्यक्तिमत्व</a><a href="biography.html">चरित्र</a><a href="gallery.html">सचित्रदर्शन</a><a href="literature.html">ग्रंथरचना</a><a href="disciples.html">शिष्यपरिवार</a><a href="message.html">संदेश</a></nav>';
+          applyShareLinks();
+        });
+
+      function applyShareLinks() {
+        const currentPage = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(document.title);
+        document.querySelectorAll('[data-share]').forEach((link) => {
+          const shareType = link.getAttribute('data-share');
+          if (shareType === 'facebook') {
+            link.href = `https://www.facebook.com/sharer/sharer.php?u=${currentPage}`;
+          } else if (shareType === 'twitter') {
+            link.href = `https://twitter.com/intent/tweet?url=${currentPage}&text=${title}`;
+          } else if (shareType === 'instagram') {
+            link.href = 'https://www.instagram.com/';
+          } else if (shareType === 'youtube') {
+            link.href = `https://www.youtube.com/results?search_query=${title}`;
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
