@@ -1,158 +1,280 @@
 <!doctype html>
 <html lang="mr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ग्रंथरचना | योगीराज सद्गुरू कल्याण स्वामी महाराज</title>
-    <style>
-      :root {
-        --cream: #fff8ea;
-        --paper: #fdf3d8;
-        --maroon: #7a1717;
-        --deep: #3c0f0f;
-        --gold: #d8a53c;
-        --text: #2b140d;
-        --muted: #6b4b3a;
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ग्रंथरचना | योगीराज सद्गुरू कल्याण स्वामी महाराज</title>
+  <style>
+    :root {
+      --cream: #fff8ea;
+      --paper: #fdf3d8;
+      --maroon: #7a1717;
+      --deep: #3c0f0f;
+      --gold: #d8a53c;
+      --text: #2b140d;
+      --muted: #6b4b3a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Noto Sans Devanagari", "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, #fff5dc 0%, #f7e7ba 100%);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 160px 14px 42px;
+    }
+
+    .shell {
+      background: rgba(255, 248, 234, 0.95);
+      border: 2px solid rgba(122, 23, 23, 0.18);
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(74, 24, 24, 0.16);
+      overflow: visible;
+    }
+
+    .header {
+      background: linear-gradient(135deg, var(--maroon), #501111 70%, #2b0b0b);
+      color: #fff8ea;
+      text-align: center;
+      padding: 10px 18px 12px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 20;
+      border-radius: 0;
+      box-shadow: 0 8px 22px rgba(50, 10, 10, 0.18);
+    }
+
+    .flag-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .flag-icon {
+      width: 42px;
+      height: auto;
+    }
+
+    .header .topline {
+      font-size: 0.86rem;
+      letter-spacing: 0.16em;
+      color: #f2d48e;
+      margin-bottom: 6px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+      line-height: 1.25;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px 12px;
+      background: var(--paper);
+      position: fixed;
+      top: 88px;
+      left: 0;
+      width: 100%;
+      z-index: 19;
+      border-bottom: 1px solid rgba(122, 23, 23, 0.12);
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: var(--deep);
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: #fffdf7;
+      border: 1px solid rgba(122, 23, 23, 0.14);
+      font-weight: 600;
+    }
+
+    .content {
+      padding: 22px;
+    }
+
+    .intro {
+      background: #fffdf8;
+      border: 1px solid rgba(122, 23, 23, 0.1);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: #fffdf8;
+      border: 1px solid rgba(122, 23, 23, 0.1);
+      border-radius: 18px;
+      padding: 18px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--maroon);
+    }
+
+    .quote {
+      margin-top: 12px;
+      padding: 14px;
+      border-left: 4px solid var(--gold);
+      background: linear-gradient(135deg, #f8e4ae, #f5d68c);
+      font-weight: 700;
+      border-radius: 12px;
+    }
+
+    ul {
+      margin: 8px 0 0 18px;
+    }
+
+    @media (max-width: 760px) {
+      .grid {
+        grid-template-columns: 1fr;
       }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: "Noto Sans Devanagari", "Segoe UI", Arial, sans-serif;
-        color: var(--text);
-        background: linear-gradient(135deg, #fff5dc 0%, #f7e7ba 100%);
-        line-height: 1.7;
+
+      .nav {
+        gap: 4px;
+        padding: 6px 8px;
       }
-      .page { max-width: 1120px; margin: 0 auto; padding: 160px 14px 42px; }
-      .shell { background: rgba(255,248,234,0.95); border: 2px solid rgba(122,23,23,0.18); border-radius: 24px; box-shadow: 0 18px 45px rgba(74,24,24,0.16); overflow: visible; }
-      .header { background: linear-gradient(135deg, var(--maroon), #501111 70%, #2b0b0b); color: #fff8ea; text-align: center; padding: 10px 18px 12px; position: fixed; top: 0; left: 0; width: 100%; z-index: 20; border-radius: 0; box-shadow: 0 8px 22px rgba(50,10,10,0.18); }
-      .flag-row { display: flex; align-items: center; justify-content: center; gap: 12px; }
-      .flag-icon { width: 42px; height: auto; }
-      .header .topline { font-size: 0.86rem; letter-spacing: 0.16em; color: #f2d48e; margin-bottom: 6px; }
-      h1 { margin: 0; font-size: clamp(1.2rem, 2.4vw, 1.7rem); line-height: 1.25; }
-      .nav { display: flex; justify-content: center; flex-wrap: wrap; gap: 8px; padding: 10px 12px; background: var(--paper); position: fixed; top: 88px; left: 0; width: 100%; z-index: 19; border-bottom: 1px solid rgba(122, 23, 23, 0.12);} 
-      .nav a { text-decoration: none; color: var(--deep); padding: 8px 12px; border-radius: 999px; background: #fffdf7; border: 1px solid rgba(122,23,23,0.14); font-weight: 600; }
-      .content { padding: 22px; }
-      .intro { background: #fffdf8; border: 1px solid rgba(122,23,23,0.1); border-radius: 18px; padding: 18px; margin-bottom: 16px; }
-      .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-      .card { background: #fffdf8; border: 1px solid rgba(122,23,23,0.1); border-radius: 18px; padding: 18px; }
-      .card h2 { margin-top: 0; color: var(--maroon); }
-      .quote { margin-top: 12px; padding: 14px; border-left: 4px solid var(--gold); background: linear-gradient(135deg, #f8e4ae, #f5d68c); font-weight: 700; border-radius: 12px; }
-      ul { margin: 8px 0 0 18px; }
-      @media (max-width: 760px) {
-        .grid { grid-template-columns: 1fr; }
-        .nav {
-          gap: 4px;
-          padding: 6px 8px;
-        }
-        .nav a {
-          width: calc(50% - 4px);
-          text-align: center;
-          padding: 7px 8px;
-          font-size: 0.92rem;
-        }
-        .content { padding: 16px; }
+
+      .nav a {
+        width: calc(50% - 4px);
+        text-align: center;
+        padding: 7px 8px;
+        font-size: 0.92rem;
       }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <div class="shell">
-        <div id="site-header"></div>
-        <section class="content">
-          <div class="intro">
-            <h2>ग्रंथरचना</h2>
-            <p>कल्याण स्वामींनी समर्थ साहित्याचे लेखन केले तसेच काही स्वतंत्र रचनाही केल्या. त्यांच्या काव्यमय वाङ्मयात रामभक्ती, गुरुप्रेम, योग-साधना आणि सद्गुरूची उपासना हे भाव स्पष्टपणे दिसतात.</p>
+
+      .content {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="intro">
+
+    <div id="site-header"></div>
+    <section class="content">
+      <div class="intro">
+        <h2>ग्रंथरचना</h2>
+        <p>कल्याण स्वामींनी समर्थ साहित्याचे लेखन केले तसेच काही स्वतंत्र रचनाही केल्या. त्यांच्या काव्यमय वाङ्मयात
+          रामभक्ती, गुरुप्रेम, योग-साधना आणि सद्गुरूची उपासना हे भाव स्पष्टपणे दिसतात.</p>
+
+
+        <article class="card">
+          <h2>मुख्य रचना</h2>
+          <ul>
+            <li>महावाक्य पंचीकरण</li>
+            <li>सोलीव सुख</li>
+            <li>ध्रुवाख्यान</li>
+            <li>शुक आख्यान</li>
+            <li>चौचरणी ओव्या</li>
+            <li>आरत्या आणि पदे</li>
+          </ul>
+          <div class="quote">
+            <h4>कल्याण स्वामींचे काव्य</h4>
+          </div>
+          ल्याण स्वामींनी समर्थ साहित्याचे लेखन केले तसेच कांही स्वतंत्र रचना पण केल्या. त्यामध्ये <b>महावाक्य
+            पंचीकरण, सोलीव सुख, ध्रुवाख्यान, शुक आख्यान, चौचरणी ओव्या, आरत्या, पदे </b> इत्यादिंचा समावेश होतो.
+          <br /><br />महावाक्य पंचीकरण हे प्रकरण 700 ओव्यांचे असून त्यामध्ये ब्रह्म‌‌ - माया, जीव जगत्‌ या वेदांन्त
+          संकल्पनांविषयी लेखन आहे.
+          श्री कल्याण स्वामी लिहतात,
+          <b>"अत्यंत गहन अर्थ येथे आहे!" </b>
+          सोलीव सुख या प्रकरणामध्ये गुरूने शिष्यांवर अनुग्रह केला असता आत्मसाक्षात्कार घडताना विविध अवस्थांचे वर्णन
+          आहे.<br />
+          रुक्मिणी स्वयंवर हे हिंदी भाषिक प्रकरण ही कल्याण स्वामींनी लिहिले आहे.
+          कल्याण स्वामींनी समर्थ रामदास स्वामींवर अनेक आरत्या, पदे रचली आहेत.समर्थांवरील एका पदात "देई चौथी भक्ती रे
+          रामा" असे मागणे मागतात. दासबोधानुसार चौथी भक्ती म्हणजे नवविधा भक्तीमधील
+          सद्‌गुरूपादसेवन भक्ती होय. <b>सीना नदीस श्रमहरिणी असे नाव देऊन तिची आरतीही रचली आहे.</b>
+          <br /><br /> ओव्या संतमाळा. ही रचना तर अत्यंत सुंदर आहे संपूर्ण भारतातील संतांना एकाएका अवयवाचे, वस्त्राचे
+          रूपक देऊन रामाच्या सगुण रूपाचे वर्णन केले आहे.
+          हे सर्व काव्य वाचून त्यातील रसाळ्पणाचा अनुभव येतो. कल्याण स्वामी हे एक श्रेष्ठ वेदांन्ती कवी होते याची
+          खात्री पटते. एकूण ओवीसंख्या 1448 आहे.
+          मज तो आवडतो मम स्वामी
+          कल्याण स्वामी जरी डोमगाव प्रांतामध्ये असले तरी त्यांचे चित्त समर्थ चरणांकडेच होते. ते त्यांच्या शिष्यांना
+          नेहमीच समर्थ चरित्र सांगत. त्यावेळी त्यांच्या डोळ्यातून अश्रुधारा वाहू लागत ते सर्व शिष्यमंडणीना म्हणत,
+          "श्री समर्थांचे चरित्र अगाध आहे. त्याचा थांग लागत नाही आता त्यांचे काव्य कोण लिहून घेत असेल? त्यांच्या बरोबर
+          निबीड वनात कोण फिरत असेल? समर्थ अत्यंत उदासीन वृत्तीचे आहेत.
+          त्यांना वेळच्या वेळी जेवण कोण देत असेल?" असे बोलताना कल्याण स्वामींचा कंठ दाटून येत असे. श्री समर्थ रामदास
+          स्वामी आणि श्री कल्याण स्वामी यांच्यातील प्रेमभाव पाहून सर्व लोक धन्य होत.
+          <br /><br />
+          एकदा रस्त्यातून चालता चालता गावातील लोक कल्याण स्वामींच्या पाया पडू लागले त्या वेळी त्यांच्या हातामध्ये वीणा
+          होती. ते म्हणाले, "ही वीणा पाहून लोक मला, हरिदास म्हणत आहेत, मला तर रामदासी हेच नाव प्रिय आहे. रामदासी हे
+          नाव मिळवणे हे फार मोठे सुकृत आहे!
+          असा अनन्य भाव पाहून सर्व शिष्य विस्मीत झाले.
+          <br /><br />श्री कल्याण स्वामींनी समर्थांवर केलेले हे पद अतिशय सुंदर आहे.
+          <div class="quote">
+            <b>
+              <br />मज तो आवडतो मम स्वामी | निशिदिनी अंतर्यामी ||धृ||
+              <br />अक्षैपदाचा सुखदाता | निरसोनी माया ममता ||1||
+              <br />भक्तीमार्गाचा गजढाला | चालविल्या आढाला ||2||
+              <br />काय बोलो मी किर्तीसी | न दिसे तुळ्णेसी ||3||
+              <br />छेत्र बहुतांचे दासाचे | धाम ची कल्याणाचे ||4||
+              <br />
+
+              ॥ जय जय रघुवीर समर्थ ॥ </b>
           </div>
 
-          <div class="grid">
-            <article class="card">
-              <h2>मुख्य रचना</h2>
-              <ul>
-                <li>महावाक्य पंचीकरण</li>
-                <li>सोलीव सुख</li>
-                <li>ध्रुवाख्यान</li>
-                <li>शुक आख्यान</li>
-                <li>चौचरणी ओव्या</li>
-                <li>आरत्या आणि पदे</li>
-              </ul>
-              <center><h4>कल्याण स्वामींचे काव्य</h4></center>
-              ल्याण स्वामींनी समर्थ साहित्याचे लेखन केले तसेच कांही स्वतंत्र रचना पण केल्या. त्यामध्ये <b>महावाक्य पंचीकरण, सोलीव सुख, ध्रुवाख्यान, शुक आख्यान, चौचरणी ओव्या, आरत्या, पदे </b> इत्यादिंचा समावेश होतो.
-<br /><br />महावाक्य पंचीकरण हे प्रकरण 700 ओव्यांचे असून त्यामध्ये ब्रह्म‌‌ - माया, जीव जगत्‌ या वेदांन्त संकल्पनांविषयी लेखन आहे.
-श्री कल्याण स्वामी लिहतात, 
-<b>"अत्यंत गहन अर्थ येथे आहे!" </b>
-सोलीव सुख या प्रकरणामध्ये गुरूने शिष्यांवर अनुग्रह केला असता आत्मसाक्षात्कार घडताना विविध अवस्थांचे वर्णन आहे.<br />
-रुक्मिणी स्वयंवर हे हिंदी भाषिक प्रकरण ही  कल्याण स्वामींनी  लिहिले आहे.
-कल्याण स्वामींनी समर्थ रामदास स्वामींवर अनेक  आरत्या, पदे रचली आहेत.समर्थांवरील एका पदात "देई चौथी भक्ती रे रामा" असे मागणे मागतात. दासबोधानुसार चौथी भक्ती म्हणजे नवविधा भक्तीमधील 
-सद्‌गुरूपादसेवन  भक्ती होय. <b>सीना नदीस श्रमहरिणी असे नाव देऊन तिची आरतीही रचली आहे.</b>
-<br /><br /> ओव्या संतमाळा.  ही रचना तर अत्यंत सुंदर आहे संपूर्ण भारतातील संतांना एकाएका अवयवाचे, वस्त्राचे रूपक देऊन रामाच्या सगुण रूपाचे वर्णन केले आहे.
-हे सर्व काव्य वाचून त्यातील रसाळ्पणाचा अनुभव येतो. कल्याण स्वामी हे एक श्रेष्ठ वेदांन्ती कवी होते याची खात्री पटते. एकूण ओवीसंख्या 1448 आहे.
-मज तो आवडतो मम स्वामी
-कल्याण स्वामी जरी डोमगाव प्रांतामध्ये असले तरी त्यांचे चित्त समर्थ चरणांकडेच होते. ते त्यांच्या शिष्यांना नेहमीच समर्थ चरित्र सांगत. त्यावेळी त्यांच्या डोळ्यातून अश्रुधारा वाहू लागत ते सर्व शिष्यमंडणीना म्हणत, 
-"श्री समर्थांचे  चरित्र अगाध आहे. त्याचा थांग लागत नाही आता त्यांचे काव्य कोण लिहून घेत असेल? त्यांच्या बरोबर निबीड वनात कोण फिरत असेल? समर्थ अत्यंत उदासीन वृत्तीचे आहेत. 
-त्यांना वेळच्या वेळी जेवण कोण देत असेल?" असे बोलताना कल्याण स्वामींचा कंठ दाटून येत असे. श्री समर्थ रामदास स्वामी आणि श्री कल्याण स्वामी यांच्यातील प्रेमभाव पाहून सर्व लोक धन्य होत.
-<br /><br />
-एकदा रस्त्यातून चालता चालता गावातील लोक कल्याण स्वामींच्या पाया पडू लागले त्या वेळी त्यांच्या हातामध्ये वीणा होती. ते म्हणाले, "ही वीणा पाहून लोक मला, हरिदास म्हणत आहेत, मला तर रामदासी हेच नाव प्रिय आहे. रामदासी हे नाव मिळवणे हे फार मोठे सुकृत आहे! 
-असा अनन्य भाव पाहून सर्व शिष्य विस्मीत झाले. 
-<br /><br />श्री कल्याण स्वामींनी समर्थांवर केलेले हे पद अतिशय सुंदर आहे.
-<center>
-<b>
-<br />मज तो आवडतो मम स्वामी | निशिदिनी अंतर्यामी ||धृ||
-<br />
-<br />अक्षैपदाचा सुखदाता | निरसोनी माया ममता ||1||
-<br />भक्तीमार्गाचा गजढाला | चालविल्या आढाला ||2||
-<br />काय बोलो मी किर्तीसी | न दिसे तुळ्णेसी ||3||
-<br />छेत्र बहुतांचे दासाचे | धाम ची कल्याणाचे ||4||
-<br />
-<br />
-<br />
-॥ जय जय रघुवीर समर्थ ॥ </b>
-</center>
-</div>
-</asp:Content>
-
-              <div class="quote">“अत्यंत गहन अर्थ येथे आहे!”</div>
-            </article>
-
-            <article class="card">
-              
-            </article>
-
-            <article class="card">
-              
-          </div>
-        </section>
+        </article>
       </div>
-    </div>
 
-    <script>
-      const mount = document.getElementById('site-header');
-      fetch('header.html')
-        .then((response) => response.text())
-        .then((html) => {
-          mount.innerHTML = html;
-          applyShareLinks();
-        })
-        .catch(() => {
-          mount.innerHTML = '<header class="header"><div style="display:flex; align-items:center; justify-content:space-between; gap:12px;"><div class="flag-row" style="margin-bottom:0; flex:1; justify-content:center;"><img src="Images/flag.gif" alt="ध्वज" class="flag-icon" /><div><div class="topline">।। श्री राम समर्थ ।।</div><h1>योगीराज सद्गुरू कल्याण स्वामी महाराज</h1></div><img src="Images/flag.gif" alt="ध्वज" class="flag-icon" /></div><div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; align-items:center; min-width:160px;"><a href="#" aria-label="Share on Facebook" data-share="facebook" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">f</a><a href="#" aria-label="Share on Instagram" data-share="instagram" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">in</a><a href="#" aria-label="Share on Twitter" data-share="twitter" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">X</a><a href="#" aria-label="Search on YouTube" data-share="youtube" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">▶</a></div></div></header><nav class="nav"><a href="index.html#home">आरंभ</a><a href="personality.html">व्यक्तिमत्व</a><a href="biography.html">चरित्र</a><a href="gallery.html">सचित्रदर्शन</a><a href="literature.html">ग्रंथरचना</a><a href="disciples.html">शिष्यपरिवार</a><a href="message.html">संदेश</a></nav>';
-          applyShareLinks();
-        });
+    </section>
+  </div>
 
-      function applyShareLinks() {
-        const currentPage = encodeURIComponent(window.location.href);
-        const title = encodeURIComponent(document.title);
-        document.querySelectorAll('[data-share]').forEach((link) => {
-          const shareType = link.getAttribute('data-share');
-          if (shareType === 'facebook') {
-            link.href = `https://www.facebook.com/sharer/sharer.php?u=${currentPage}`;
-          } else if (shareType === 'twitter') {
-            link.href = `https://twitter.com/intent/tweet?url=${currentPage}&text=${title}`;
-          } else if (shareType === 'instagram') {
-            link.href = 'https://www.instagram.com/';
-          } else if (shareType === 'youtube') {
-            link.href = `https://www.youtube.com/results?search_query=${title}`;
-          }
-        });
-      }
-    </script>
-  </body>
+
+  <script>
+    const mount = document.getElementById('site-header');
+    fetch('header.html')
+      .then((response) => response.text())
+      .then((html) => {
+        mount.innerHTML = html;
+        applyShareLinks();
+      })
+      .catch(() => {
+        mount.innerHTML = '<header class="header"><div style="display:flex; align-items:center; justify-content:space-between; gap:12px;"><div class="flag-row" style="margin-bottom:0; flex:1; justify-content:center;"><img src="Images/flag.gif" alt="ध्वज" class="flag-icon" /><div><div class="topline">।। श्री राम समर्थ ।।</div><h1>योगीराज सद्गुरू कल्याण स्वामी महाराज</h1></div><img src="Images/flag.gif" alt="ध्वज" class="flag-icon" /></div><div style="display:flex; gap:8px; flex-wrap:wrap; justify-content:flex-end; align-items:center; min-width:160px;"><a href="#" aria-label="Share on Facebook" data-share="facebook" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">f</a><a href="#" aria-label="Share on Instagram" data-share="instagram" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">in</a><a href="#" aria-label="Share on Twitter" data-share="twitter" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">X</a><a href="#" aria-label="Search on YouTube" data-share="youtube" target="_blank" rel="noopener noreferrer" style="width:32px; height:32px; border-radius:999px; display:inline-flex; align-items:center; justify-content:center; color:#fff8ea; text-decoration:none; background:rgba(255,255,255,0.16); border:1px solid rgba(255,255,255,0.26); font-size:0.82rem; font-weight:900;">▶</a></div></div></header><nav class="nav"><a href="index.html#home">आरंभ</a><a href="personality.html">व्यक्तिमत्व</a><a href="biography.html">चरित्र</a><a href="gallery.html">सचित्रदर्शन</a><a href="literature.html">ग्रंथरचना</a><a href="disciples.html">शिष्यपरिवार</a><a href="message.html">संदेश</a></nav>';
+        applyShareLinks();
+      });
+
+    function applyShareLinks() {
+      const currentPage = encodeURIComponent(window.location.href);
+      const title = encodeURIComponent(document.title);
+      document.querySelectorAll('[data-share]').forEach((link) => {
+        const shareType = link.getAttribute('data-share');
+        if (shareType === 'facebook') {
+          link.href = `https://www.facebook.com/sharer/sharer.php?u=${currentPage}`;
+        } else if (shareType === 'twitter') {
+          link.href = `https://twitter.com/intent/tweet?url=${currentPage}&text=${title}`;
+        } else if (shareType === 'instagram') {
+          link.href = 'https://www.instagram.com/';
+        } else if (shareType === 'youtube') {
+          link.href = `https://www.youtube.com/results?search_query=${title}`;
+        }
+      });
+    }
+  </script>
+</body>
+
 </html>

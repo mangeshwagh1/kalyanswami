@@ -1,274 +1,283 @@
 <!doctype html>
 <html lang="mr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>सचित्रदर्शन | योगीराज सद्गुरू कल्याण स्वामी महाराज</title>
-    <style>
-      :root {
-        --cream: #fff8ea;
-        --paper: #fdf3d8;
-        --maroon: #7a1717;
-        --deep: #3c0f0f;
-        --gold: #d8a53c;
-        --text: #2b140d;
-        --muted: #6b4b3a;
-      }
 
-      * { box-sizing: border-box; }
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>सचित्रदर्शन | योगीराज सद्गुरू कल्याण स्वामी महाराज</title>
+  <style>
+    :root {
+      --cream: #fff8ea;
+      --paper: #fdf3d8;
+      --maroon: #7a1717;
+      --deep: #3c0f0f;
+      --gold: #d8a53c;
+      --text: #2b140d;
+      --muted: #6b4b3a;
+    }
 
-      body {
-        margin: 0;
-        font-family: "Noto Sans Devanagari", "Segoe UI", Arial, sans-serif;
-        color: var(--text);
-        background: linear-gradient(135deg, #fff5dc 0%, #f7e7ba 100%);
-        line-height: 1.7;
-      }
+    * {
+      box-sizing: border-box;
+    }
 
-      .page {
-        max-width: 1120px;
-        margin: 0 auto;
-        padding: 174px 14px 42px;
-      }
+    body {
+      margin: 0;
+      font-family: "Noto Sans Devanagari", "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: linear-gradient(135deg, #fff5dc 0%, #f7e7ba 100%);
+      line-height: 1.7;
+    }
 
-      .shell {
-        background: rgba(255, 248, 234, 0.95);
-        border: 2px solid rgba(122, 23, 23, 0.18);
-        border-radius: 24px;
-        box-shadow: 0 18px 45px rgba(74, 24, 24, 0.16);
-        overflow: visible;
-      }
+    .page {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 174px 14px 42px;
+    }
 
-      .header {
-        background: linear-gradient(135deg, var(--maroon), #501111 70%, #2b0b0b);
-        color: #fff8ea;
-        text-align: center;
-        padding: 10px 18px 12px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 20;
-        border-radius: 0;
-        box-shadow: 0 8px 22px rgba(50, 10, 10, 0.18);
-        transition: padding 0.25s ease, transform 0.25s ease;
-      }
+    .shell {
+      background: rgba(255, 248, 234, 0.95);
+      border: 2px solid rgba(122, 23, 23, 0.18);
+      border-radius: 24px;
+      box-shadow: 0 18px 45px rgba(74, 24, 24, 0.16);
+      overflow: visible;
+    }
 
-      .flag-row {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        margin-bottom: 10px;
-      }
+    .header {
+      background: linear-gradient(135deg, var(--maroon), #501111 70%, #2b0b0b);
+      color: #fff8ea;
+      text-align: center;
+      padding: 10px 18px 12px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 20;
+      border-radius: 0;
+      box-shadow: 0 8px 22px rgba(50, 10, 10, 0.18);
+      transition: padding 0.25s ease, transform 0.25s ease;
+    }
 
-      .flag-icon {
-        width: 42px;
-        height: auto;
-        filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
-      }
+    .flag-row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      margin-bottom: 10px;
+    }
 
-      .header .topline {
-        font-size: 0.86rem;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: #f2d48e;
-        margin-bottom: 6px;
-      }
+    .flag-icon {
+      width: 42px;
+      height: auto;
+      filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
+    }
 
-      h1 {
-        margin: 0;
-        font-size: clamp(1.2rem, 2.4vw, 1.7rem);
-        line-height: 1.25;
-      }
+    .header .topline {
+      font-size: 0.86rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: #f2d48e;
+      margin-bottom: 6px;
+    }
 
-      .subhead {
-        margin-top: 8px;
-        font-size: 1rem;
-        color: #f7e7ba;
-      }
+    h1 {
+      margin: 0;
+      font-size: clamp(1.2rem, 2.4vw, 1.7rem);
+      line-height: 1.25;
+    }
 
-      .nav {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 8px;
-        padding: 10px 12px;
-        background: var(--paper);
-        border-bottom: 1px solid rgba(122, 23, 23, 0.12);
-        position: fixed;
-        top: 88px;
-        left: 0;
-        width: 100%;
-        z-index: 19;
-        border-radius: 0;
-        transition: padding 0.25s ease, top 0.25s ease;
-      }
+    .subhead {
+      margin-top: 8px;
+      font-size: 1rem;
+      color: #f7e7ba;
+    }
 
-      .nav a {
-        text-decoration: none;
-        color: var(--deep);
-        padding: 8px 12px;
-        border-radius: 999px;
-        font-weight: 600;
-        border: 1px solid rgba(122, 23, 23, 0.14);
-        background: #fffdf7;
-      }
+    .nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 10px 12px;
+      background: var(--paper);
+      border-bottom: 1px solid rgba(122, 23, 23, 0.12);
+      position: fixed;
+      top: 88px;
+      left: 0;
+      width: 100%;
+      z-index: 19;
+      border-radius: 0;
+      transition: padding 0.25s ease, top 0.25s ease;
+    }
 
-      .nav a:hover {
-        background: #fbeecf;
-      }
+    .nav a {
+      text-decoration: none;
+      color: var(--deep);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+      border: 1px solid rgba(122, 23, 23, 0.14);
+      background: #fffdf7;
+    }
 
+    .nav a:hover {
+      background: #fbeecf;
+    }
+
+    .gallery-section {
+      padding: 18px 20px 16px;
+    }
+
+    .intro {
+      background: #fffdf8;
+      border: 1px solid rgba(122, 23, 23, 0.1);
+      border-radius: 18px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .gallery-shell {
+      background: #fffdf8;
+      border: 1px solid rgba(122, 23, 23, 0.1);
+      border-radius: 18px;
+      padding: 16px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .slide-frame {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      width: min(100%, 820px);
+      max-height: 68vh;
+      aspect-ratio: 4 / 3;
+      margin: 0 auto;
+      background: #f6e7b8;
+    }
+
+    .slide-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
+      background: #f6e7b8;
+    }
+
+    .slide-caption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 12px 14px;
+      background: linear-gradient(transparent, rgba(32, 10, 10, 0.8));
+      color: #fff8ea;
+      font-weight: 600;
+    }
+
+    .gallery-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 12px;
+    }
+
+    .nav-btn {
+      border: none;
+      border-radius: 999px;
+      width: 42px;
+      height: 42px;
+      font-size: 1rem;
+      cursor: pointer;
+      background: var(--maroon);
+      color: #fff8ea;
+    }
+
+    .dots {
+      display: flex;
+      gap: 8px;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      border: none;
+      background: #d7c09a;
+      cursor: pointer;
+    }
+
+    .dot.active {
+      background: var(--maroon);
+      transform: scale(1.15);
+    }
+
+    @media (max-width: 760px) {
       .gallery-section {
-        padding: 18px 20px 16px;
-      }
-
-      .intro {
-        background: #fffdf8;
-        border: 1px solid rgba(122, 23, 23, 0.1);
-        border-radius: 18px;
-        padding: 18px;
-        margin-bottom: 16px;
-      }
-
-      .gallery-shell {
-        background: #fffdf8;
-        border: 1px solid rgba(122, 23, 23, 0.1);
-        border-radius: 18px;
         padding: 16px;
-        max-width: 860px;
-        margin: 0 auto;
       }
 
       .slide-frame {
-        position: relative;
-        overflow: hidden;
-        border-radius: 16px;
-        width: min(100%, 820px);
-        max-height: 68vh;
-        aspect-ratio: 4 / 3;
-        margin: 0 auto;
-        background: #f6e7b8;
+        max-height: 54vh;
       }
 
-      .slide-image {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-        display: block;
-        background: #f6e7b8;
+      .nav {
+        gap: 4px;
+        padding: 6px 8px;
       }
 
-      .slide-caption {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        padding: 12px 14px;
-        background: linear-gradient(transparent, rgba(32, 10, 10, 0.8));
-        color: #fff8ea;
-        font-weight: 600;
+      .nav a {
+        width: calc(50% - 4px);
+        text-align: center;
+        padding: 7px 8px;
+        font-size: 0.92rem;
       }
+    }
+  </style>
+</head>
 
-      .gallery-controls {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 12px;
-      }
+<body>
+  <div class="page">
+    <div class="shell">
+      <div id="site-header"></div>
 
-      .nav-btn {
-        border: none;
-        border-radius: 999px;
-        width: 42px;
-        height: 42px;
-        font-size: 1rem;
-        cursor: pointer;
-        background: var(--maroon);
-        color: #fff8ea;
-      }
+      <section class="gallery-section">
+        <div class="intro">
+          <h2>सचित्रदर्शन</h2>
 
-      .dots {
-        display: flex;
-        gap: 8px;
-      }
+        </div>
 
-      .dot {
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        border: none;
-        background: #d7c09a;
-        cursor: pointer;
-      }
-
-      .dot.active {
-        background: var(--maroon);
-        transform: scale(1.15);
-      }
-
-      @media (max-width: 760px) {
-        .gallery-section { padding: 16px; }
-        .slide-frame {
-          max-height: 54vh;
-        }
-        .nav {
-          gap: 4px;
-          padding: 6px 8px;
-        }
-        .nav a {
-          width: calc(50% - 4px);
-          text-align: center;
-          padding: 7px 8px;
-          font-size: 0.92rem;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="page">
-      <div class="shell">
-        <div id="site-header"></div>
-
-        <section class="gallery-section">
-            <div class="intro">
-              <h2>सचित्रदर्शन</h2>
-              
-            </div>
-
-            <div class="gallery-shell">
-              <div class="slide-frame">
-                <img id="galleryImage" class="slide-image" alt="चित्रसंच" />
-                <div id="galleryCaption" class="slide-caption"></div>
-              </div>
-              <div class="gallery-controls">
-                <button class="nav-btn" id="prevBtn" type="button" aria-label="मागील चित्र">◀</button>
-                <div class="dots" id="dots"></div>
-                <button class="nav-btn" id="nextBtn" type="button" aria-label="पुढील चित्र">▶</button>
-              </div>
-            </div>
-          </section>
-      </div>
+        <div class="gallery-shell">
+          <div class="slide-frame">
+            <img id="galleryImage" class="slide-image" alt="चित्रसंच" />
+            <div id="galleryCaption" class="slide-caption"></div>
+          </div>
+          <div class="gallery-controls">
+            <button class="nav-btn" id="prevBtn" type="button" aria-label="मागील चित्र">◀</button>
+            <div class="dots" id="dots"></div>
+            <button class="nav-btn" id="nextBtn" type="button" aria-label="पुढील चित्र">▶</button>
+          </div>
+        </div>
+      </section>
     </div>
+  </div>
 
-    <script>
-      (function () {
-        const mount = document.getElementById('site-header');
-        if (!mount) return;
+  <script>
+    (function () {
+      const mount = document.getElementById('site-header');
+      if (!mount) return;
 
-        fetch('header.html')
-          .then((response) => {
-            if (!response.ok) throw new Error('Header load failed');
-            return response.text();
-          })
-          .then((html) => {
-            mount.innerHTML = html;
-            applyShareLinks();
-            applyHeaderScrollState();
-          })
-          .catch(() => {
-            mount.innerHTML = `
+      fetch('header.html')
+        .then((response) => {
+          if (!response.ok) throw new Error('Header load failed');
+          return response.text();
+        })
+        .then((html) => {
+          mount.innerHTML = html;
+          applyShareLinks();
+          applyHeaderScrollState();
+        })
+        .catch(() => {
+          mount.innerHTML = `
               <header class="header">
                 <div style="display:flex; align-items:center; justify-content:space-between; gap:12px;">
                   <div class="flag-row" style="margin-bottom:0; flex:1; justify-content:center;">
@@ -297,114 +306,115 @@
                 <a href="message.html">संदेश</a>
               </nav>
             `;
-            applyShareLinks();
-            applyHeaderScrollState();
-          });
+          applyShareLinks();
+          applyHeaderScrollState();
+        });
 
-        function applyShareLinks() {
-          const currentPage = encodeURIComponent(window.location.href);
-          const title = encodeURIComponent(document.title);
-          document.querySelectorAll('[data-share]').forEach((link) => {
-            const shareType = link.getAttribute('data-share');
-            if (shareType === 'facebook') {
-              link.href = `https://www.facebook.com/sharer/sharer.php?u=${currentPage}`;
-            } else if (shareType === 'twitter') {
-              link.href = `https://twitter.com/intent/tweet?url=${currentPage}&text=${title}`;
-            } else if (shareType === 'instagram') {
-              link.href = 'https://www.instagram.com/';
-            } else if (shareType === 'youtube') {
-              link.href = `https://www.youtube.com/results?search_query=${title}`;
-            }
-          });
-        }
-
-        function applyHeaderScrollState() {
-          const header = document.querySelector('.header');
-          const nav = document.querySelector('.nav');
-
-          window.addEventListener('scroll', () => {
-            const scrolled = window.scrollY > 10;
-            if (header) {
-              header.style.padding = scrolled ? '10px 18px 10px' : '16px 18px 14px';
-              header.querySelector('h1').style.fontSize = scrolled ? '1.1rem' : 'clamp(1.2rem, 2.4vw, 1.7rem)';
-            }
-            if (nav) {
-              nav.style.padding = scrolled ? '6px 12px' : '10px 12px';
-              nav.style.top = scrolled ? '70px' : '92px';
-            }
-          });
-        }
-      })();
-
-      const galleryItems = [
-        { src: 'Images/Gallery/Chhati.JPG', title: 'छाती' },
-        { src: 'Images/Gallery/DomganMandir.jpg', title: 'दोंगग मंदिर' },
-        { src: 'Images/Gallery/Fandi.JPG', title: 'फांदी' },
-        { src: 'Images/Gallery/Galu.JPG', title: 'गालू' },
-        { src: 'Images/Gallery/Hande.jpg', title: 'हंडे' },
-        { src: 'Images/Gallery/Handwriting.jpg', title: 'हस्तलेखन' },
-        { src: 'Images/Gallery/Hanuman.jpg', title: 'हनुमान' },
-        { src: 'Images/Gallery/Hatti.JPG', title: 'हत्ती' },
-        { src: 'Images/Gallery/KalyanSwami.jpg', title: 'कल्याणस्वामी' },
-        { src: 'Images/Gallery/Samarth.jpg', title: 'समर्थ' }
-      ];
-
-      const galleryImage = document.getElementById('galleryImage');
-      const galleryCaption = document.getElementById('galleryCaption');
-      const dotsContainer = document.getElementById('dots');
-      const prevBtn = document.getElementById('prevBtn');
-      const nextBtn = document.getElementById('nextBtn');
-
-      let currentIndex = 0;
-      let autoplayTimer;
-
-      function renderDots() {
-        dotsContainer.innerHTML = '';
-        galleryItems.forEach((item, index) => {
-          const dot = document.createElement('button');
-          dot.className = 'dot';
-          dot.type = 'button';
-          dot.setAttribute('aria-label', `चित्र ${index + 1}`);
-          dot.addEventListener('click', () => {
-            showSlide(index);
-            resetAutoplay();
-          });
-          dotsContainer.appendChild(dot);
+      function applyShareLinks() {
+        const currentPage = encodeURIComponent(window.location.href);
+        const title = encodeURIComponent(document.title);
+        document.querySelectorAll('[data-share]').forEach((link) => {
+          const shareType = link.getAttribute('data-share');
+          if (shareType === 'facebook') {
+            link.href = `https://www.facebook.com/sharer/sharer.php?u=${currentPage}`;
+          } else if (shareType === 'twitter') {
+            link.href = `https://twitter.com/intent/tweet?url=${currentPage}&text=${title}`;
+          } else if (shareType === 'instagram') {
+            link.href = 'https://www.instagram.com/';
+          } else if (shareType === 'youtube') {
+            link.href = `https://www.youtube.com/results?search_query=${title}`;
+          }
         });
       }
 
-      function showSlide(index) {
-        currentIndex = (index + galleryItems.length) % galleryItems.length;
-        const item = galleryItems[currentIndex];
-        galleryImage.src = item.src;
-        galleryImage.alt = item.title;
-        galleryCaption.textContent = item.title;
+      function applyHeaderScrollState() {
+        const header = document.querySelector('.header');
+        const nav = document.querySelector('.nav');
 
-        Array.from(dotsContainer.children).forEach((dot, dotIndex) => {
-          dot.classList.toggle('active', dotIndex === currentIndex);
+        window.addEventListener('scroll', () => {
+          const scrolled = window.scrollY > 10;
+          if (header) {
+            header.style.padding = scrolled ? '10px 18px 10px' : '16px 18px 14px';
+            header.querySelector('h1').style.fontSize = scrolled ? '1.1rem' : 'clamp(1.2rem, 2.4vw, 1.7rem)';
+          }
+          if (nav) {
+            nav.style.padding = scrolled ? '6px 12px' : '10px 12px';
+            nav.style.top = scrolled ? '70px' : '92px';
+          }
         });
       }
+    })();
 
-      function resetAutoplay() {
-        clearInterval(autoplayTimer);
-        autoplayTimer = setInterval(() => {
-          showSlide(currentIndex + 1);
-        }, 4000);
-      }
+    const galleryItems = [
+      {src: 'Images/Gallery/Samarth.jpg', title: 'श्री समर्थ'},
+      {src: 'Images/Gallery/Chhati.JPG', title: 'कल्याण छाटी'},
+      {src: 'Images/Gallery/Fandi.JPG', title: 'अंबाजीचे कल्याण झाले'},
+      {src: 'Images/Gallery/Galu.JPG', title: 'खांडुकची गोष्ट'},
+      {src: 'Images/Gallery/Hande.jpg', title: 'हंडे'},
+      {src: 'Images/Gallery/Handwriting.jpg', title: 'हस्तलेखन'},
+      {src: 'Images/Gallery/Hanuman.jpg', title: 'श्री हनुमान'},
+      {src: 'Images/Gallery/Hatti.JPG', title: 'हत्ती नियंत्रणात आणला'},
+      {src: 'Images/Gallery/KalyanSwami.jpg', title: 'श्री कल्याण स्वामी'},
+      {src: 'Images/Gallery/DomganMandir.jpg', title: 'श्री डोमगाव मंदिर'}
+    ];
 
-      prevBtn.addEventListener('click', () => {
-        showSlide(currentIndex - 1);
-        resetAutoplay();
+    const galleryImage = document.getElementById('galleryImage');
+    const galleryCaption = document.getElementById('galleryCaption');
+    const dotsContainer = document.getElementById('dots');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+
+    let currentIndex = 0;
+    let autoplayTimer;
+
+    function renderDots() {
+      dotsContainer.innerHTML = '';
+      galleryItems.forEach((item, index) => {
+        const dot = document.createElement('button');
+        dot.className = 'dot';
+        dot.type = 'button';
+        dot.setAttribute('aria-label', `चित्र ${index + 1}`);
+        dot.addEventListener('click', () => {
+          showSlide(index);
+          resetAutoplay();
+        });
+        dotsContainer.appendChild(dot);
       });
+    }
 
-      nextBtn.addEventListener('click', () => {
+    function showSlide(index) {
+      currentIndex = (index + galleryItems.length) % galleryItems.length;
+      const item = galleryItems[currentIndex];
+      galleryImage.src = item.src;
+      galleryImage.alt = item.title;
+      galleryCaption.textContent = item.title;
+
+      Array.from(dotsContainer.children).forEach((dot, dotIndex) => {
+        dot.classList.toggle('active', dotIndex === currentIndex);
+      });
+    }
+
+    function resetAutoplay() {
+      clearInterval(autoplayTimer);
+      autoplayTimer = setInterval(() => {
         showSlide(currentIndex + 1);
-        resetAutoplay();
-      });
+      }, 4000);
+    }
 
-      renderDots();
-      showSlide(0);
+    prevBtn.addEventListener('click', () => {
+      showSlide(currentIndex - 1);
       resetAutoplay();
-    </script>
-  </body>
+    });
+
+    nextBtn.addEventListener('click', () => {
+      showSlide(currentIndex + 1);
+      resetAutoplay();
+    });
+
+    renderDots();
+    showSlide(0);
+    resetAutoplay();
+  </script>
+</body>
+
 </html>
